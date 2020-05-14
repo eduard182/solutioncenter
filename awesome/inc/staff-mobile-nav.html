@@ -1,0 +1,32 @@
+<div id="right_menu">
+
+        <ul id="nav-mobile" class="flush-left">
+	
+        <li><a href="<?php echo ROOT_PATH; ?>"><?php echo __('Support Center Home'); ?></a></li>
+        <li><a href="<?php echo ROOT_PATH; ?>open.php"><?php echo __('Open a New Ticket'); ?></a></li>
+        <li><a href="<?php echo ROOT_PATH; ?>view.php"><?php echo __('Check Ticket Status'); ?></a></li>	
+
+		 <?php
+				if ($thisclient && is_object($thisclient) && $thisclient->isValid()
+					&& !$thisclient->isGuest()) {
+				echo '<div id="welcome">Welcome,&nbsp;'.Format::htmlchars($thisclient->getName()).'</div>';
+				 ?>
+				<li><a href="<?php echo ROOT_PATH; ?>profile.php"><?php echo __('Profile'); ?></a></li>
+				<li><a href="<?php echo ROOT_PATH; ?>tickets.php"><?php echo sprintf(__('Tickets (%d)'), $thisclient->getNumTickets()); ?></a></li>
+				<li><a href="<?php echo $signout_url; ?>"><?php echo __('Sign Out'); ?></a></li>
+			<?php
+			} elseif($nav) {
+				if ($cfg->getClientRegistrationMode() == 'public') { ?>
+					<div id="welcome"><?php echo __('Guest User'); ?></div>  <?php
+				}
+				if ($thisclient && $thisclient->isValid() && $thisclient->isGuest()) { ?>
+					<li><a href="<?php echo $signout_url; ?>"><?php echo __('Sign Out'); ?></a></li><?php
+				}
+				elseif ($cfg->getClientRegistrationMode() != 'disabled') { ?>
+					<li><a href="<?php echo $signin_url; ?>"><?php echo __('Sign In'); ?></a></li>
+			<?php
+				}
+			} ?>
+					<li id="contact-id"><a id="contact" href="#"><?php echo $ost->getConfig()->getTitle(); ?></a></li>
+    </ul>
+</div>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.1.0/stylesheets/jquery.sidr.dark.min.css">
+    <script src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.1.0/jquery.sidr.min.js"></script>
+	<link rel="stylesheet" href="https://osticketawesome.com/support/awesome/css/hamburger.css">		
+	<link type="text/css" rel="stylesheet" href="https://osticketawesome.com/support/awesome/css/awesome-client-desktop.css">
+	<link type="text/css" rel="stylesheet" href="https://osticketawesome.com/support/awesome/css/awesome-client-mobile.css">
+<style>
+body {
+    margin: 0px;
+	background: #fff;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0px!important;
+    background: #bc1313;
+    z-index: 999999;
+    top: 0;
+}
+div#header a {
+    text-decoration: none!important;
+}
+div#left-logo {
+    margin: 18px;
+	height:24px;
+	float: left;
+    -webkit-transition: left 2s;
+    transition: left 2s;
+		position: absolute;
+		left: 0px			
+}
+@media screen and (max-width: 500px) { 
+	div#left-logo {
+		position: absolute;
+		left: -1000px		
+	}
+}
+#header-logo a, a#header-logo-link {
+    font-family: 'Roboto'!important;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 0px;
+    letter-spacing: 1.5px!important;
+    will-change: opacity, transform!important;
+    -webkit-transition: all .5s ease-out!important;
+    -moz-transition: all .5s ease-out!important;
+    -o-transition: all .5s ease-out!important;
+    -ms-transition: all .5s ease-out!important;
+    transition: all .5s ease-out!important;
+    position: relative;
+    top: -1px!important;
+}
+div#left-logo a {
+    color: #fff;
+}
+div#left-logo:hover a#header-logo-link {
+    color: #460606;
+}
+div#left-logo {
+    color: #fbc3c3;
+}
+div#left-logo:hover span.header-logo-text {
+    color: #000000;
+}
+span.header-logo-text {
+    color: #fbc3c3;
+    float: none;
+    margin: 0!important;
+    position: relative;
+    top: -4px;
+    letter-spacing: 3px;
+    font-size: 10px;
+    font-family: verdana;
+    font-weight: normal;
+    font-style: initial;
+    letter-spacing: 2.4px;
+    line-height: 0px;	
+    will-change: opacity, transform!important;
+    -webkit-transition: all .6s ease-out!important;
+    -moz-transition: all .6s ease-out!important;
+    -o-transition: all .6s ease-out!important;
+    -ms-transition: all .6s ease-out!important;
+    transition: all .6s ease-out!important;	
+}
+div#right-buttons {
+	display: block;
+}
+.c-hamburger {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    text-indent: -9999px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+.sidr {
+    z-index: 999998	
+}
+div#content {
+    margin: 70px 0 0 10px;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+
+	<div id="left-logo">
+		<a id="header-logo-link" href="#">
+			Your Company Ltd.<br>
+			<span class="header-logo-text">Ticket Tracking System</span>
+		</a>			
+	</div>
+	<div id="right-buttons">
+		<a class="mobile-nav-new-ticket" href="/support/scp/users.php">
+		<svg style="width:24px;height:24px; padding: 18px;float: right;margin-right: 61px;" viewBox="0 0 24 24">
+			<path fill="#fff" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+		</svg>
+		</a>
+		<a class="mobile-nav-new-ticket" href="/support/scp/users.php">
+			<svg style="width:24px;height:24px; padding: 18px;float:right;margin-right:1px;" viewBox="0 0 24 24">
+				<path fill="#fff" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+			</svg>
+		</a>
+		<a class="mobile-nav-new-ticket" href="/support/scp/users.php">
+			<svg style="width:24px;height:24px; padding: 18px;float:right;margin-right:1px;" viewBox="0 0 24 24">
+				<path fill="#fff" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+			</svg>
+		</a>	
+	</div>	
+	<div id="right-menu" href="#right-menu">
+		<button href="#right-menu" class="c-hamburger c-hamburger--htx" style="">
+			<span>toggle menu</span>
+		</button>
+<script>
+$(document).ready(function() {
+
+  "use strict";
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+      toggle.addEventListener( "touchstart", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });	  
+    }
+
+   $('.c-hamburger').sidr({
+      	name: 'sidr-right',
+      	side: 'right',
+		body: '#content',
+		displace: false
+    });	
+})();
+</script>
+	</div>
+</div>	
+
+
+<div id="content">
+	<div class="main-content">
+		<h1>Welcome to the Support Center</h1> 
+		<p> In order to streamline support requests and better serve you, we utilize a support ticket system. Every support request is assigned a unique ticket number which you can use to track the progress and responses online. For your reference we provide complete archives and history of all your support requests. A valid email address is required to submit a ticket. </p>    </div>
+	</div
+<div>
+
+<div id="sidr-right" class="sidr right">
+	<div class="sidr-inner">
+		<ul id="nav-mobile" class="flush-left">
+				
+			<li><a href="/support/">Support Center Home</a></li>
+		    <li><a href="/support/open.php">Open a New Ticket</a></li>
+		    <li><a href="/support/view.php">Check Ticket Status</a></li>	
+		
+			<div id="welcome">Guest User</div>  					
+			<li><a href="/support/login.php">Sign In</a></li>
+			<li id="contact-id"><a id="contact" href="#">Your Company Ltd.</a></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>

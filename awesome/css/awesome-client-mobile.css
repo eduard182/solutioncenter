@@ -1,0 +1,468 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+/*
+/*
+/*
+/*
+/*      OSTICKET AWESOME
+/*
+/*      Client - Mobile
+/*
+/*
+/*
+/*
+*/
+
+@media only screen and (max-width:860px) {
+	body {
+		margin: 0px;
+		background: #000;
+	}
+	
+/* ==========================================================================
+ HEADER
+========================================================================== */
+
+	#header,
+	#header-mobile {
+		position: fixed;
+		width: 100%;
+		height: 60px!important;;
+		padding: 0px!important;
+		background: ##007CC3;
+		z-index: 999999;
+		top: 0;
+	}
+	#header-desktop {
+		display: none;
+	}
+	#header-mobile {
+		display: block;
+	}
+	div#header a {
+		color: #fff;
+	}
+	#container {
+		background: #fff;
+		width: 100%;
+	    border-radius: initial!important;
+	    padding-top: 60px;	
+	}	
+	div#right_menu {
+		z-index: 999998;
+	}
+
+/* ==========================================================================
+ LOGO
+========================================================================== */
+
+	#header-logo a, a#header-logo-link {
+	    font-family: 'Roboto'!important;
+	    text-transform: uppercase;
+	    font-style: normal;
+	    font-weight: 500;
+	    font-size: 17px;
+	    line-height: 0px;
+	    letter-spacing: 1.5px!important;
+	    will-change: opacity, transform!important;
+	    -webkit-transition: all .5s ease-out!important;
+	    -moz-transition: all .5s ease-out!important;
+	    -o-transition: all .5s ease-out!important;
+	    -ms-transition: all .5s ease-out!important;
+	    transition: all .5s ease-out!important;
+	    position: relative;
+	    top: -1px!important;
+	}
+	div#left-logo a {
+	    color: #fff;
+	}
+	div#left-logo:hover a#header-logo-link {
+	    color: #460606;
+	}
+	div#left-logo {
+	    color: #fbc3c3;
+	    width: 300px;
+	    height: 24px;
+	    margin: 18px;
+	    float: left;
+	    -webkit-transition: left 2s;
+	    transition: left 2s;
+	    position: absolute;
+	    left: 0px;	
+	}
+	div#left-logo:hover span.header-logo-text {
+	    color: #000000;
+	}
+	span.header-logo-text {
+	    color: #fbc3c3;
+	    float: none;
+	    margin: 0!important;
+	    position: relative;
+	    top: 12px;
+	    letter-spacing: 3px;
+	    font-size: 10px;
+	    font-family: verdana;
+	    font-weight: normal;
+	    font-style: initial;
+	    letter-spacing: 2.4px;
+	    line-height: 0px;	
+	    will-change: opacity, transform!important;
+	    -webkit-transition: all .6s ease-out!important;
+	    -moz-transition: all .6s ease-out!important;
+	    -o-transition: all .6s ease-out!important;
+	    -ms-transition: all .6s ease-out!important;
+	    transition: all .6s ease-out!important;	
+	}
+	div#right-buttons {
+	    display: block;
+	    float: right;
+	}
+	a.mobile-nav-new-ticket {
+	    display: none;
+	}
+	.c-hamburger {
+	    display: block;
+	    position: relative;
+	    overflow: hidden;
+	    margin: 0;
+	    padding: 0;
+	    width: 60px;
+	    height: 60px;
+	    font-size: 0;
+	    text-indent: -9999px;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    box-shadow: none;
+	    border-radius: none;
+	    border: none;
+	    cursor: pointer;
+	    -webkit-transition: background 0.3s;
+	    transition: background 0.3s;
+	    position: absolute;
+	    top: 0;
+	    right: 0px;
+	}
+
+/* ==========================================================================
+ NAVIGATION  
+========================================================================== */
+
+	#nav {
+	    display: none;
+	}
+	#nav-right{
+	    background: #AB1B00;
+	    height: 50px!important;
+	    padding-top: 0px;
+	    z-index: 200;
+	    border-top: 0px solid #ddd;
+	    border-bottom: 0px solid #c5d9ec;
+	    border-radius: 6px 6px 0px 0px;
+	    position: relative;
+	    top: -10px;
+	    margin: 10px 0 0px 0!important;
+	    padding: 0px!important;
+	}
+	#nav-right li {
+	    display: block;
+	}
+	#nav-right li a {
+	    background-image: initial!important;
+	    color: #fff;
+	    font-size: 17px;
+	    height: 36px;
+	    display: inline-block;
+	    width: 237px;
+	    text-align: left;
+	    padding: 0px;
+	    margin-left: 10px;
+	    border-radius: 20px;
+	    -webkit-border-radius: 20px;
+	    -moz-border-radius: 20px;
+	    background-position: 10px 50%;
+	    background-repeat: no-repeat;
+	}
+	div#internationalization-container {
+	    display: none;
+	}
+	button#mobile_right_buttom {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	/*     zoom: .35;
+	    margin: 37px; */
+	}
+
+/* ==========================================================================
+ SIDR MENU code in footer.inc
+========================================================================== */
+
+	button.c-hamburger.c-hamburger--htx {
+	    display: inline;
+	}
+	div#right_menu a {
+	    color: #fff;
+	}
+	.sidr {
+	    z-index: 999998;
+	}
+	.sidr ul {
+	    display: block;
+	    margin: 59px 0 15px;
+	    padding: 0;
+	    border-top: 1px solid #1a1a1a;
+	    border-bottom: 1px solid #4d4d4d;
+	}
+	ul#nav-mobile {
+	    margin: 60px 0 0 0;
+	}
+	div#welcome {
+	    background: #1a96f3;
+	    padding: 15px 15px!important;
+	    -webkit-box-shadow: inset -6px 0px 10px -2px #222!important;
+	    -moz-box-shadow: inset -6px 0px 10px -2px #222!important;
+	    box-shadow: inset -6px 0px 10px -2px #222!important;	
+	}
+	li#contact-id {
+	    position: fixed;
+	    bottom: 0px;
+	    width: 100%;
+	    background: #262525;
+	    border-top: 1px solid rgb(26, 26, 26);	
+		-webkit-box-shadow: inset -11px 0px 7px -7px rgba(0, 0, 0, 1);
+		-moz-box-shadow:    inset -11px 0px 7px -7px rgba(0, 0, 0, 1);
+		box-shadow:         inset -11px 0px 7px -7px rgba(0, 0, 0, 1);	
+	}
+	li#contact-id a {
+	    border-top: 1px solid #494949;
+	}
+
+/* ==========================================================================
+ OPEN TICKET open.inc.php
+========================================================================== */
+
+	#content {
+	    margin: 0;
+	    padding: 10px;
+	}
+	table {
+	    width: 100%!important;
+	}
+	select, 
+	input.dp, 
+	input#query, 
+	input[type="text"],
+	input[type="email"],
+	.form-field, 
+	.form_table input[type=text], 
+	.form_table input[type=password], 
+	.form_table textarea {
+	    width: 90%!important;
+	    margin: 5px 0 15px 0!important;	
+	}
+	.error-asterisk {
+	    margin-left: -2px;
+	}
+	input[type="tel"] {
+	    width: 70%!important;
+	}
+	input[size="5"] {
+	    width: 14%!important;
+	}
+
+/* ==========================================================================
+ SEARCH
+========================================================================== */
+
+	.search.well {
+	    margin-top: 0px;
+	}
+
+/* ==========================================================================
+ ICONS
+========================================================================== */
+
+	.tickets svg {
+	    width: 30px;
+	    float: right;
+	    fill: #4DB80C;
+	    margin: 4px 0 0 5px;
+	}
+
+/* ==========================================================================
+ REDACTOR
+========================================================================== */
+
+
+
+/* ==========================================================================
+ CAPTCHA
+========================================================================== */
+
+
+
+/* ==========================================================================
+ BUTTONS
+========================================================================== */
+
+
+
+/* ==========================================================================
+ MESSAGES: ERRORS, NOTICES AND WARNINGS
+========================================================================== */
+
+	.error {
+		color: #d62705;
+		font-weight: bold;
+		margin: -10px 0px 10px 0px!important;
+	}
+
+/* ==========================================================================
+ CHECK TICKET STATUS
+========================================================================== */
+
+
+
+/* ==========================================================================
+ CHECK TICKET STATUS
+========================================================================== */
+
+
+
+/* ==========================================================================
+ MANAGE YOUR PROFILE INFORMATION
+========================================================================== */
+
+
+
+/* ==========================================================================
+ FORGOT MY PASSWORD
+========================================================================== */
+
+
+
+/* ==========================================================================
+ TICKETS tickets.inc
+========================================================================== */
+
+	.active.state {
+		font-weight: normal;
+	}
+
+/* ==========================================================================
+ TICKET VIEW view.inc
+========================================================================== */
+
+
+
+
+/* ==========================================================================
+ LOADING ANIMATION
+========================================================================== */
+
+
+
+
+/* ==========================================================================
+ FOOTER
+========================================================================== */
+
+
+}
+
+/*
+/*
+/*
+/*
+/*
+/*
+/*      OSTICKET AWESOME
+/*      Client - EXTRA SMALL SCREEN
+/*
+/*
+/*
+/*
+*/
+
+@media only screen and (max-width:500px) {
+	div#left-logo {
+		position: absolute;
+		left: -1000px		
+	}
+	p.buttons-center.ticket-view {
+	zoom: .75;
+	}
+	input[type="submit"] {
+		clear: both!important;
+		float: none;
+		display: block!important;
+	}	
+	input[type="button"], input[type="reset"], input[type="submit"] {
+		margin: 5px 5px 15px 5px!important;
+		}
+	input[type="button"] {
+		float: right;
+	}	
+	input[type="reset"] {
+		float: right;
+	}
+	.action-button {
+		max-width: 46px!important;
+	}	
+	#button-more {
+		width: 22px!important;
+	}	
+	a#user-more {
+		width: 59px!important;
+	}	
+	.caret {
+		width: 16px!important;	
+	}
+}	
+	
+@media only screen and (max-width:701px) {
+	#clientLogin p {
+		padding: 0px!important;
+	}
+}
+@media only screen and (max-width:560px) {
+	.login-box {
+		width: 360px;
+		padding: 0px!important;
+	}
+	form#clientLogin {
+		padding: 30px 20px 30px 15px;
+	}	
+	#clientLogin {
+		margin: 0px;
+	}
+	#clientLogin .instructions {
+		padding: 13px 50px 0px 0px;
+		font-size: 110%;
+		height: 64px;
+		vertical-align: bottom;
+	}	
+}
+@media only screen and (max-width:400px) {
+	form#clientLogin {
+		padding: 30px 20px 5px 15px;
+	}	
+	.login-box {
+		width: 220px;
+		margin: 0px!important;
+		padding: 0px!important;
+		display: table;
+		/* background: #ccc; */
+		margin: 0 auto 20px auto!important;
+	}
+	div#links-box {
+		display: table;
+		padding: 15px;
+		vertical-align: top;
+	}	
+	input[type="tel"] {
+	    width: 62%!important;
+	}
+}

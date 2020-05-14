@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>awesome/css/awesome-client-desktop.css?19292ad"/>	
+	<link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>awesome/css/awesome-client-mobile.css"/>	
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.1.0/stylesheets/jquery.sidr.dark.min.css">
+    <script src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.1.0/jquery.sidr.min.js"></script>
+	<link rel="stylesheet" href="https://osticketawesome.com/support/awesome/css/hamburger.css">		
+<style>
+#header {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    padding: 11px 0px 9px 12px;
+    background: #bc1313;
+    z-index: 999999;
+    top: 0;
+}
+div#right_menu {
+    z-index: 999998;
+}
+.sidr {
+    top: 60px;
+    z-index: 999998	
+	}
+body {
+    margin: 0px;
+}	
+div#content {
+    margin: 70px 0 0 10px;
+}
+.c-hamburger--htx {
+    background-color: #A11515;
+}
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: #cb0032;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+	<div id="right-menu" href="#right-menu">
+		<button href="#right-menu" class="c-hamburger c-hamburger--htx" style="">
+			<span>toggle menu</span>
+		</button>
+	</div>
+</div>	
+<script>
+$(document).ready(function() {
+
+  "use strict";
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+      toggle.addEventListener( "touchstart", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });	  
+    }
+
+   $('.c-hamburger').sidr({
+        name: 'right_menu', // Same than menu DIV
+        side: 'right',
+		body: 'container',
+		displace: false
+    });	
+})();
+</script>
+
+
+<div class="clear"></div>
+
+
+<div id="content">
+Hi
+</div>
+
+
+
+  </body>
+</html>
+</body>
+</html>

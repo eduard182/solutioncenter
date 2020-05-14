@@ -1,0 +1,33 @@
+
+       <!--
+		<div id="poweredByOST">
+			<a id="poweredBy" href="http://osticket.com" target="_blank"><img src="<?php echo ROOT_PATH; ?>awesome/img/poweredby.png" alt="<?php echo __('Helpdesk software - powered by osTicket'); ?>"></a>
+		</div>		
+		<div id="ostawesome">
+			<a id="theme-by" href="http://osticketawesome.com" target="_blank"><img src="<?php echo ROOT_PATH; ?>awesome/img/themeby.png" alt="<?php echo __('Fully responsive osTicket theme for client and staff areas'); ?>"></a>
+		</div>
+		<div class="clear"></div>
+		-->
+		<script>
+			$(document).ready(function() {
+				$('#simple-menu').sidr({
+					renaming: false
+				});
+				
+				$('.submenu-button').click(function(e) {
+					e.preventDefault();
+					$(this).next().slideToggle();
+				});
+			});
+			$(document).ready(function(){
+				$("#container").on("click",function(e) {
+					$.sidr('close','sidr-right');
+				});
+				$(".submenu").on("click",function(e) {
+					$.sidr('close','sidr-right');
+				});
+				$("#sidr-right").on("click",function(e) {
+					e.stopPropagation();
+				});
+			});				
+		</script>	

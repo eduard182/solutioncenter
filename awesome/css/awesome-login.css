@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+/*
+/*
+/*
+/*
+/*      OSTICKET AWESOME
+/*
+/*           LOGIN
+/*
+/*
+/*
+/*
+*/
+body#loginBody {
+    -webkit-font-smoothing: antialiased;
+
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 16px;
+    font-smoothing: antialiased;
+    height: 100%;
+    line-height: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+#loginBox:after {
+    background-color: initial;
+}
+div#brickwall {
+    background:url(client.jpg);
+     background-repeat: repeat;
+    background-size: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: initial;
+    -webkit-background-size: initial;
+    -moz-background-size: initil;
+    -o-background-size: initial;
+    background-size: initial;
+    background-blend-mode: initial;
+    background-attachment: fixed;
+    background-color: initial;
+    mix-blend-mode: initial;
+    filter: initial;
+    -ms-filter: initial;
+}
+.tape {
+    display: none;
+}
+#loginBox {
+    border: initial;
+    box-shadow: initial;
+    mix-blend-mode: initial;
+    isolation: initial;
+    width: 400px;
+    padding: initial;
+    padding-bottom: initial;
+    text-align: center;
+    -moz-box-sizing: initial;
+    -webkit-box-sizing: initial;
+    box-sizing: initial;
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    margin-left: -200px;
+    border-radius: 5px;
+}
+#logo a img {
+    margin-right: 10px;
+    max-height: 100px;	
+}
+fieldset input {
+	display: block;
+    margin-bottom: 1em;
+    border: 1px solid rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 2px 8px!important;
+    width: 100%;
+    border-radius: 4px!important;
+    height: 31px;
+    color: #666666!important;
+    letter-spacing: 1px;
+    font-size: 14px!important;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset!important;
+}
+button.submit.button.pull-right  {
+    margin: 30px 0px 10px 0px;
+    background-color: #333;
+    height: 50px;
+    width: 140px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #FFF!important;
+    border: none;
+    font-family: verdana;
+    padding: 9px 0 26px 0;
+    background: rgb(202, 35, 3) !important;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1;
+    will-change: opacity, transform;
+    height: 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    background-color: rgb(105, 105, 106);
+    transition: all 0.3s ease-out;
+    border-radius: 4px;
+    padding: 0px 27px !important;
+    float: none;
+}
+button.submit.button.pull-right:hover {
+    background-color: #424242!important;
+}
+button[type=submit]:hover {
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.7) inset;
+    outline: none;	
+}
+h3 a {
+    color: #B5B5B5;
+}
+i.icon-signin {
+    display: none;
+}
+input[type=reset], input[type=submit], input[type=button] {
+    display: inline-block;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    -o-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input:focus {
+    border: initial;
+    box-shadow: initial;
+    outline: none;
+}
+#poweredBy {
+    display: none;
+}
+#company .content {
+    display: none;
+}
+
+
+
+
+/* ==========================================================================
+ IE Fixes
+========================================================================== */
+
+_:-ms-lang(x), #background-compat {
+    background-color: #2E2E2E !important;
+}
+#loginBox {
+    border: 0px !important;
+    box-shadow: none !important;
+    background-color: rgba(79,78,77,0.1); !important;
+}
+
