@@ -1,0 +1,1141 @@
+/*
+/*
+/*
+/*
+/*
+/*
+/*      OSTICKET AWESOME
+/*      Staff - desktop
+/*
+/*
+/*
+/*
+*/
+
+body, select  {
+    font-size: 15px;
+	 background:url(client.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    body, input, select, textarea {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    color: #696969;
+    margin: 12px 0px 0 0px;
+    padding: 0;	
+}
+
+h1 {
+    font-weight: normal;	
+    color: #696969;
+    font-size: 28px;
+}
+h3 {
+    margin: 0 0 10px 0;
+    color: #777;
+    font-weight: normal;
+    font-size: 23px;
+}
+.error {
+	color: #d62705;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px!important;
+}
+
+/* ==========================================================================
+ HEADER
+========================================================================== */
+
+#header {
+    position: relative;
+    height: 69px;
+    padding: 0 10px 0 0;
+    background: #2E2E2E;
+}
+#header .pull-left {
+    float: initial;
+}
+div#header-logo {
+    float: left;
+}
+div#header-links {
+    float: right;
+    margin: 0 1px 0px 0;
+    padding: 27px 0px 0px 0;
+    color: rgba(255,255,255,0.3);!important;
+    font-size: 13px;
+}
+div#header-links a {
+    margin: 0 0 0 8px;
+}
+div#internationalization-container {
+    background: #747373;
+    width: 100%;
+    height: 23px;
+    margin: 5px 0 0 0;
+}
+div#internationalization {
+    float: right;
+    padding: 6px 7px 0px 0;
+}
+.flag {
+    width: 16px;
+    height: 11px;
+    display: inline-block;
+  /*  background: url(../images/flags.png) no-repeat; */
+    margin: 0 2px 0 0;
+}
+.clear {
+    height: 0px;
+}
+#nav {
+    margin: 0;
+    padding: 0;
+    height: 26px;
+    background: initial;
+    border-top: initial;
+    box-shadow: initial;
+    -moz-box-shadow: initial;
+    -webkit-box-shadow: initial;
+}
+#container {
+    background: rgba(255,255,255,0.7);
+    width: 840px;
+    margin: 0 auto;
+    box-shadow: initial;
+    -moz-box-shadow: initial;
+    -webkit-box-shadow: initial;
+    border-radius: 5px!important;
+}
+#header p {
+
+}
+div#header a {
+    color: #322FE8;
+    text-decoration: none!important;
+    letter-spacing: 0px;
+}
+
+#mobile_right_buttom {
+	display:none;
+}
+
+
+/* ==========================================================================
+ LOGO
+========================================================================== */
+
+@font-face {
+    font-family: 'europeextbold_italic';
+    src: url('/assets/fonts/europeext-bold-italic-webfont.eot');
+    src: url('/assets/fonts/europeext-bold-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/europeext-bold-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/europeext-bold-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/europeext-bold-italic-webfont.svg#europeextbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'europeextbold_italic-t';
+    src: url('/assets/fonts/europeext-bold-italic-t-webfont.eot');
+    src: url('/assets/fonts/europeext-bold-italic-t-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/europeext-bold-italic-t-webfont.woff2') format('woff2'),
+         url('/assets/fonts/europeext-bold-italic-t-webfont.woff') format('woff'),
+         url('/assets/fonts/europeext-bold-italic-t-webfont.ttf') format('truetype'),
+         url('/assets/fonts/europeext-bold-italic-t-webfont.svg#europeextbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#header-logo img { /* orignial logo function removed by osTicket Awesome in header.inc.php BUT it is easy to add back */
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+#header-logo a { /* orignial logo function removed by osTicket Awesome in header.inc.php BUT it is easy to add back */
+    font-family: 'Roboto' !important;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    color: #999!important;
+    padding: 0px 0 0 0px;
+    line-height: 45%;
+    letter-spacing: 1px!important;
+    position: relative;
+    top: 10px;
+    will-change: opacity, transform!important;
+    -webkit-transition: all .3s ease-out!important;
+    -moz-transition: all .3s ease-out!important;
+    -o-transition: all .3s ease-out!important;
+    -ms-transition: all .3s ease-out!important;
+    transition: all .3s ease-out!important;	
+}
+#header-logo a:hover { /* orignial logo function removed by osTicket Awesome in header.inc.php BUT it is easy to add back */
+    color: #322FE8!important;
+}
+span.header-logo-text {
+    font-size: 11px;
+    font-family: verdana;
+    text-align: center;
+    color: #ddd;
+    font-weight: normal;
+    font-style: initial;
+    padding: 15px 0 0px 0px;
+    letter-spacing: 0px;
+    float: none;
+}
+
+/* ==========================================================================
+ NAVIGATION
+========================================================================== */
+
+#nav {
+	background: #3633FF;
+    padding-top: 3px;
+    z-index: 200;
+    border-top: 0px solid #ddd;
+    border-bottom: 0px solid #c5d9ec;
+    border-radius: 6px 6px 0px 0px;
+    position: relative;
+    top: -10px;
+    height: 35px;
+    margin: 0px 0 -15px 0!important;
+    padding: 0px!important;
+    font-size: 14px;
+}
+#nav li a {
+    background-image: initial!important;
+	color: rgba(192,192,192,0.3);
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    background-position: 10px 50%;
+    background-repeat: no-repeat;	
+}
+#nav li a.active {
+	font-weight: bold;
+	color: rgba(192,192,192,0.3);
+    background-color: initial;
+}
+#nav li a:hover {
+    background-color: initial;
+	color: #000;
+}
+
+/* ==========================================================================
+ TYPOGRAPHY
+========================================================================== */
+
+h2, .subject {
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+    color: #B8B6B7;
+    font-size: 28px!important;
+}
+
+/* ==========================================================================
+ INPUTS
+========================================================================== */
+
+input {
+    line-height: normal;
+}
+input, select, textarea {
+    margin: 0;
+    vertical-align: baseline;
+}
+.form_table input[type=text] {
+    width: 423px!important;
+}
+select, input.dp, input#query, input[type="text"], .form-field, .form_table input[type=text], .form_table input[type=password], .form_table textarea {
+    padding: 0 0 0 6px!important;
+    color: #252525!important;
+    margin: 3px 0px 3px 2px!important;
+    border: 1px solid #A5A4A4!important;
+    border-radius: 3px!important;
+    height: 30px!important;
+    background: rgba(192,192,192,0.3)!important;
+    font-size: 14px;
+    font-family: Verdana!important;
+    width: 431px!important;
+}
+.dropzone {
+    max-width: 840px;
+    background: #e8f6fa!important;
+    font-size: 14px;
+    color: #747373;
+    padding: 8px;
+    border-radius: 5px;	
+}
+.dropzone a {
+    color: #0f588f;
+    text-decoration: underline;
+}
+.error-asterisk {
+    color: #d62705;
+    font-size: 19px!important;
+    font-weight: bold;
+}
+
+input#username,
+input[type="password"] {
+    padding: 0 0 0 6px!important;
+    color: #252525!important;
+    margin: 3px 0px 3px 2px!important;
+    border: 1px solid #A5A4A4!important;
+    border-radius: 3px!important;
+    height: 30px!important;
+    background: initial!important;
+    font-size: 14px;
+    font-family: Verdana!important;
+    width: 202px!important;
+}
+
+/* ==========================================================================
+ REDACTOR
+========================================================================== */
+
+.redactor_toolbar {
+    border: 1px solid #A5A4A4!important;
+    border-bottom: 0px!important;
+    border-radius: 5px 5px 0 0;
+    background: #ececec!important;
+}
+.redactor_editor {
+	font-size: 11pt;
+    height: 300px;
+    border: 1px solid #A5A4A4!important;
+    border-bottom: 0px!important;
+    border-top: 0px!important;
+}
+.redactor_box {
+    background: initial;
+}
+
+/* ==========================================================================
+ CAPTCHA
+========================================================================== */
+
+th.required {
+    font-weight: bold;
+}
+tr.captchaRow th {
+    padding: 0 0 5px 0;
+}
+input#captcha {
+    width: 87px!important;
+    text-align: center;
+    padding: 0px!important;
+    margin: 1px 0 0 0!important;
+}
+span.captcha {
+    border: 1px solid #A5A4A4!important;
+    border-radius: 3px!important;
+}
+div#captcha img {
+    /* width: 87px!important; */
+    text-align: center;
+    padding: 0px!important;
+    margin: 0px 12px 0 12px!important;
+    border: 1px solid #A5A4A4!important;
+    border-radius: 3px;
+}
+input#captcha {
+    margin: 0 8px 0 0 !important;
+}
+.captcha-float {
+    float: left;
+}
+.captcha-float.error-asterick {
+    float: left;
+}
+.captcha-float font.error-asterisk {
+    float: left;
+}
+.captcha-float .error {
+    float: left;
+    margin: 5px 0 0 0;
+}
+.captcha-text {
+    float: left;
+    margin: 5px 0 0 4px;
+}
+.captcha-error {
+    color: #d62705;
+    font-weight: bold;
+    margin: 6px 0px 0px 12px!important;
+}
+
+
+
+/* ==========================================================================
+ BUTTONS
+========================================================================== */
+
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+input[type="button"], input[type="reset"], input[type="submit"] {
+    position: relative!important;
+    cursor: pointer!important;
+    display: inline-block!important;
+    overflow: hidden!important;
+    -webkit-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important;
+    -webkit-tap-highlight-color: transparent!important;
+    vertical-align: middle!important;
+    z-index: 1!important;
+    will-change: opacity, transform!important;
+    -webkit-transition: all .3s ease-out!important;
+    -moz-transition: all .3s ease-out!important;
+    -o-transition: all .3s ease-out!important;
+    -ms-transition: all .3s ease-out!important;
+    transition: all .3s ease-out!important;
+    height: 32px!important;
+    line-height: 30px!important;
+    text-decoration: none!important;
+    color: rgba(192,192,192,0.3)!important;
+    background-color: #767676!important;
+    text-align: center!important;
+    letter-spacing: .5px!important;
+    border: 0px!important;
+    padding: 0px 27px!important;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 2px!important;
+    margin: 0 5px!important;
+    vertical-align: middle!important;
+    border-radius: 2px!important;
+    min-width: 116px;
+}
+input[type="submit"] {
+    background: #d62705!important;
+}
+p.buttons-center.ticket-view {
+    margin: 22px 10px 84px 10px;
+}
+input.btn {
+    background: #d62705!important;
+    height: 36px!important;
+}
+input.btn:hover {
+  /*  background: #1a96f3!important; */
+    height: 36px!important;
+}
+#clientLogin input[type=submit] {
+    margin: 20px 20px 20px 0!important;
+}
+input#email {
+    background: rgba(192,192,192,0.3)!important;
+    width: 300px!important;	
+}
+input#ticketno {
+    background: rgba(192,192,192,0.3)!important;
+    width: 300px!important;	
+}
+.login-box {
+    width: 52%;
+    display: table-cell;
+    box-shadow: 12px 0 15px -15px rgba(0,0,0,0.4);
+    padding: 15px;
+}
+.desktop-button,
+.desktop-button a {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    line-height: 32px;
+    text-decoration: none;
+    color: rgba(192,192,192,0.3);
+    background-color: #767676;
+    text-align: center;
+    letter-spacing: .5px;
+    border: 0px;
+    padding: 0px 27px!important;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    border-radius: 2px;
+	width: 225px;
+    height: 38px;
+    margin: 20px 0 0 0;
+}
+.desktop-button a:hover,
+.desktop-button a:hover {
+    background: #8bcb0d!important;
+}
+.desktop-button:hover {
+    background-color: #d62705;
+}
+button.desktop-button.green {
+	background: #8bcb0d;
+}
+button.desktop-button.blue {
+	background: #1a96f3;
+}
+button.desktop-button.welcome.green, button.desktop-button.welcome.blue {
+    font-size: 115%;
+    max-width: 300px;
+    width: 100%;
+    overflow: visible;
+    line-height: normal;
+    height: auto;
+    min-height: 38px;
+}
+button.c-hamburger.c-hamburger--htx {
+    display: none;
+}
+
+/* ==========================================================================
+ MESSAGES: ERRORS, NOTICES AND WARNINGS
+========================================================================== */
+
+#msg_notice, #msg_warning, #msg_error {
+    display: table;	
+    margin: 0;
+    padding: 10px;
+    background: initial;
+    border-radius: 6px;
+    font-size: 17px;
+    width: 96%;
+    margin: 0 0 10px 0;	
+}
+div#alert-icon {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;	
+}
+div#alert-text {
+    display: table-cell;	
+    vertical-align: middle;
+}
+#msg_error svg, #msg_warning svg, #msg_notice svg {
+    fill: currentColor;
+    position: initial;
+    width: 24px!important;
+    margin: 0px 0px 0px 0px;
+    padding: 0 10px 0 2px;
+    animation: bounceIn 1s;
+	-webkit-animation-iteration-count: 3;
+}
+#msg_notice {
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border: 1px solid #A1C7CF;
+    border-right: 6px solid #A1C7CF;
+}
+#msg_warning {
+    color: #8A6D3B;
+    background-color: #FCF8E3;
+    border: 1px solid #D7BF96;
+    border-right: 6px solid #C9B799;	
+}
+#msg_error {
+    color: #A61B00;
+    background-color: rgba(192,192,192,0.3)0F0;
+    border: 1px solid #DDB0B0;
+    border-right: 6px solid #CF9E94;
+}
+@keyframes bounceIn {
+  from {
+    -webkit-transform: scale(1.0);
+    opacity: 1.0;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    opacity: 1.0;
+  }
+  to { 
+    -webkit-transform: scale(1.0);
+    opacity: 1.0;
+  }
+/* ==========================================================================
+ LANDING PAGE BOXES
+========================================================================== */
+
+div#welcome-page {
+    /* position: fixed; */
+    display: block;
+    margin: 30px 30px 0 30px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	background:#f6f6f6;
+}
+div#login-boxes {
+    background: url('../assets/default/images/or-horiz.png?1319655200') 50% 50% no-repeat;
+}
+.landing-open.inset, 
+.landing-check.inset {
+
+}
+.landing-open.inset { /**/
+    margin: 0 0 0px 0;
+    padding: 0;
+}
+#login-boxes h3 {
+    margin: 0 0 30px 0;
+}
+.welcome-button-bottom {
+    margin: 20px 0 0 0;
+}
+#landing-open .welcome-button-bottom { /**/
+    padding: 0 0 130px 0;
+}
+
+@media only screen and (min-width: 700px) {
+	div#welcome-page {
+		background: url('../assets/default/images/or-vert.png?1319655200') 50% 50% no-repeat #f6f6f6;
+	}	
+	div#login-boxes {
+		background: none;
+	}	
+	div#landing-open,
+	div#landing-check {
+		float: left;
+		width: 50%;
+		height: 200px;
+	    position: relative;	
+	}
+	.landing-open.inset {
+		padding: 0 40px 0 0;
+	}
+	.landing-check.inset {
+		padding: 0px 0 0 60px;
+	}
+	.welcome-button-bottom {
+		position: absolute;
+		bottom: 0px;
+	}
+	#landing-open .welcome-button-bottom { /**/
+		padding: 0;
+	}	
+	#landing-check .welcome-button-bottom { /**/
+		padding: 0px 0 0 60px;
+	}	
+}
+#clientLogin input[type=text], #clientLogin input[type=password] {
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    margin-top: 8px!important;
+    background: rgba(192,192,192,0.3)!important;	
+}
+
+
+/* ==========================================================================
+ SIGN-IN PAGE login.inc.php
+========================================================================== */
+
+#clientLogin {
+    background: url('../assets/default/images/lock.png?1319655200') 91% 72% no-repeat #f6f6f6;
+}
+div#login {
+    position: relative;
+}
+#ticketForm div.clear, 
+#clientLogin div.clear {
+    padding: 0px;
+}
+a.forgot-password {
+    margin: 0 0 0 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 145px;
+}
+@media only screen and (max-width: 700px) {
+	#clientLogin {
+		background: #f6f6f6;
+	}
+	#clientLogin p {
+		clear: both;
+		font-size: 130%;
+	    padding: 100px 20px 20px 20px!important;
+	}	
+	div#login-boxes {
+		background: initial!important;
+	}		
+	div#landing-open {
+		background: url('../assets/default/images/or-horiz.png?1319655200') 50% 88% no-repeat;
+		background-size: 460px;
+	}
+	form#clientLogin div#landing-open {
+		background: initial;
+	}	
+	form#clientLogin div#landing-check {
+		background: url('../assets/default/images/or-horiz.png?1319655200') 50% 0% no-repeat;
+	}	
+}
+
+
+/* ==========================================================================
+ WELCOME PAGE LANDING PAGE BOXES 
+========================================================================== */
+
+
+div#landing-agent {
+    margin: 5px 20px 9px 20px;
+    padding: 0 3px 0 0;	
+    font-size: 17px;
+    float: right;
+}
+div#landing-agent-welcome {
+    padding: 20px 10px 20px 0;
+    font-size: 17px;
+    text-align: right;
+	margin: 0 0 0 -6px;
+}
+.filedrop .dropzone {
+    border: 1px dashed #60787E!important;
+}
+div#redactor-bottom-whitespace {
+	margin: -2px 0 0px -4px;
+    z-index: 100;
+    background: url(../images/whitespace.png);
+    width: 20px;
+    position: absolute;
+}
+div#redactor-bottom-whitespace-gray {
+    background: url(../images/whitespace-gray.png);
+}
+#reply #redactor-bottom-whitespace {
+    display: none;
+}
+
+/* ==========================================================================
+ CHECK TICKET STATUS
+========================================================================== */
+
+.form-header {
+    margin: 20px 0 0 0;
+}
+.login-box {
+    box-shadow: initial;
+    width: 408px;;
+    padding: 0px!important;	
+}
+.login-box-input.ticket-number {
+    margin-top: 20px;
+}
+#clientLogin {
+    background: url('../assets/default/images/or-vert.png?1319655200') 47% 50% no-repeat rgba(192,192,192,0.3);
+    padding: 30px;
+    margin: 30px;
+}
+@media only screen and (max-width: 700px) {
+	#clientLogin {
+		background: url('../assets/default/images/or-vert.png?1319655200') 50% 50% no-repeat rgba(192,192,192,0.3);
+	}
+}
+@media only screen and (max-width: 660px) {
+	#clientLogin {
+		background: rgba(192,192,192,0.3);
+	}
+}
+#clientLogin .instructions {
+    width: 400px;
+    background: url('../assets/default/images/lock.png?1319655200') 100% 100% no-repeat;
+}    
+@media only screen and (max-width: 515px) {
+	#clientLogin .instructions {
+		display: none;
+	}
+}
+@media only screen and (max-width: 340px) {
+	#clientLogin {
+		margin: 0 0 20px 0;
+	}
+}
+#clientLogin p {
+    margin: 0px!important;
+}
+#clientLogin input[type=submit] {
+    margin: 30px 0 0 0!important;
+}
+#clientLogin .instructions {
+    padding-left: 50px;
+    padding-right: 0px;
+}
+input#email, 
+input#ticketno {
+    width: 212px!important;
+}
+.instructions h3 {
+    margin: 0 0 20px 0;
+}
+#clientLogin p {
+    clear: both;
+    font-size: 130%;
+    padding: 43px;
+}
+div#clientLogin-message {
+    padding: 0 0 30px 0;
+}
+
+
+/* ==========================================================================
+ TICKET OPEN open.inc.php
+========================================================================== */
+
+table#open-ticket-table {
+    width: 800px;
+}
+table#open-ticket-table h3 {
+    margin: -10px 0 10px 0;
+}
+table#open-ticket-table th {
+    font-weight: bold;
+}
+
+
+/* ==========================================================================
+ MANAGE YOUR PROFILE INFORMATION
+========================================================================== */
+
+form#profile-info {
+    margin: 10px 0 0 0;
+}
+
+/* ==========================================================================
+ FORGOT MY PASSWORD
+========================================================================== */
+
+form#clientLogin.extra-padding {
+    padding: 64px 0px 45px 74px;
+}
+#clientLogin strong {
+    font-size: 14px;
+    color: #d62705;
+    font-weight: normal;
+}
+
+/* ==========================================================================
+ TICKETS tickets.inc.php
+========================================================================== */
+
+#ticketTable caption {
+    padding: 5px;
+    text-align: left;
+    color: #777;
+    background: #ddd;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    background: #ececec!important;
+}
+table#ticketTable th {
+    font-weight: bold;
+    background: #dff0fd;	
+}
+#ticketTable td {
+    padding: 10px 2px 10px 10px;
+    border: 1px solid #C9D7E1;
+}
+table#ticketTable a {
+    color: #184E81;
+    font-size: 13px!important;
+}
+.Icon {
+    padding-left: 0px;
+}
+a.Icon.Ticket,
+a.Icon.emailTicket,
+a.Icon.phoneTicket,
+a.Icon.webTicket {
+    background: none;
+}
+#ticketSearchForm select,
+#ticketSearchForm input[type="text"] {
+    width: 240px!important;
+}
+i.material-icons.refresh {
+    font-size: 20px;
+    vertical-align: middle;
+    margin: 0 -2px 0 4px;
+    color: #8bcb0d;
+}
+#ticketTable, #ticketTable th {
+    border: 0px!important;
+}
+#ticketTable,  
+#ticketTable td {
+    border: 1px solid #DBDBDB;
+}
+#ticketTable caption {
+	padding: 20px 5px 5px 0px!important;
+    text-align: left;
+    color: #777;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    border: initial!important;
+    background: initial!important;
+    font-weight: normal;
+}
+#ticketSearchForm select {
+    height: 32px!important;
+	position: relative;
+    top: -1px;	
+}
+#ticketSearchForm input[type="text"] {
+    position: relative!important;
+    top: -1px;
+}
+#ticketSearchForm input[type="submit"] {
+    position: relative!important;
+    top: -2px!important;
+    background: #1a96f3!important;	
+}
+#ticketSearchForm input[type="submit"]:hover {
+    background: #454546!important;	
+}
+table#ticketTable .id a,
+td.created,
+td.status,
+td.department {
+    font-size: 11px!important;
+    padding-top: 12px!important;	
+}
+.page-links {
+    margin: 0;
+    border: 0px solid #DFF0FD;
+    border-top: 0px;
+    padding: 10px;
+    border-radius: 0 0 6px 6px;
+    background: #dff0fd;
+}
+#ticketTable th {
+    padding: 6px;
+    border-left: 0px!important;
+    border-right: 0px!important;	
+}
+#ticketTable th.id {
+    width: 51px;
+    border-radius: 6px 0 0 0;
+}
+#ticketTable th.created {
+    width: 100px;
+}
+#ticketTable th.status {
+    width: 51px;
+}
+#ticketTable th.description {
+    width: *;
+}
+#ticketTable th.department {
+    width: 120px;
+    border-radius: 0 6px 0 0;	
+}
+
+
+/* ==========================================================================
+ TICKET VIEW view.inc.php
+========================================================================== */
+
+.infoTable {
+    background: initial;
+    margin: 20px 0 0 0;
+    font-size: 15px;
+}
+table#ticketTable {
+    width: 100%!important;
+}
+#ticket-view-number {
+    float: right;
+    font-size: 17px;
+    margin-top: 10px;
+}
+table.infoTable th {
+    padding: 0 20px 10px 20px;
+    width: 100px;
+}
+table.infoTable td {
+}
+td#infoTable1 {
+    width: 330px;
+}
+td#infoTable2 {
+    width: 290px;
+}
+td#infoTable3 {
+	width: *;
+}
+#ticketThread table.response, #ticketThread table.message {
+    border: initial;
+    border-bottom: initial;
+    margin: 0 0 20px 0;	
+}
+#ticketThread .message th {
+    background: #ddd!important; /*gray*/
+    border-radius: 8px 8px 0px 0px;
+    border: 0px!important;
+    color: #696969!important;
+    font-size: 10pt;
+    padding: 12px;
+}
+table.thread-entry.response th {
+	border-radius: 8px 8px 0px 0px;
+    border: 0px!important;
+    color: rgba(192,192,192,0.3);
+    font-size: 10pt;
+}
+table.thread-entry.response span {
+    color: rgba(192,192,192,0.3)!important;
+}
+#ticketThread table th {
+    padding: 12px;
+	background: #248DBC!important; /*blue*/	
+}
+#ticketThread table th span {
+    color: #696969;
+}
+.thread-body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 20px;
+    word-wrap: break-word;
+    overflow-x: auto;
+    border: 1px solid #BEBEBE;
+    border-top: 0px;
+    border-radius: 0px 0px 8px 8px!important;
+    float: left;
+	width: 758px;
+}
+#reply {
+	padding: 18px 20px 20px 20px;
+    background: #ececec;                   /* #DFDFDF */
+    border: 1px solid #B6B6B6;
+    border-top: 1px solid #B6B6B6;
+    border-radius: 6px;
+}
+
+
+/* ==========================================================================
+ LOADING ANIMATION
+========================================================================== */
+
+#loading {
+    border: initial;
+    padding: 0px;
+    width: 66px;
+    height: 66px;
+    background: url('../images/loading-red.gif') 0px 90% no-repeat;
+    position: fixed;
+    display: none;
+    z-index: 3000;
+    right: 50%!important;
+    left: 50%!important;
+    margin-left: -33px;
+}
+
+
+/* ==========================================================================
+ FOOTER
+========================================================================== */
+
+div#footer {
+    width: 300px;
+    margin: 20px auto;
+}
+@media only screen and (max-width: 515px) {
+	div#footer {
+		width: initial;
+		margin: 20px 2%
+	}	
+}
+#footer #poweredBy {
+	float: left;
+    display: block;
+    width: 126px;
+    height: 23px;
+    outline: none;
+    margin: 0 auto;
+    text-indent: initial;	
+}
+#footer #ostawesome {
+	float: right;
+    display: block;
+    width: 126px;
+    height: 23px;
+    outline: none;
+    margin: 4px auto 0 auto;
+    text-indent: initial;	
+}
+#footer #poweredBy img {
+    width: 126px;
+    height: 23px;
+}
+#footer #poweredBy img:hover {
+    width: 218px;
+    height: 40px;
+    position: relative;
+    top: -10px;
+    left: -65px;
+}
+#footer #theme-by img {
+    width: 126px;
+    height: 20px;
+}
+#footer #theme-by img:hover {
+	width: 218px;
+    height: 40px;
+    position: relative;
+    top: -10px;
+    left: -28px;
+}
+
+/* ==========================================================================
+ IE Fixes
+========================================================================== */
+
+#nav li a.home, #nav li a.status, #nav li a.new {
+    background-image: none!important;
+}
+#nav li a.active, #nav li a:hover {
+    background-color: rgba(170, 27, 0, 1);
+}
+.login-box {
+    box-shadow: none!important;
+}
+#nav {
+    box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+}
+#container {
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+#footer #poweredBy {
+    text-indent: 0px !important
+}
+input, select, textarea {
+	background-color:rgba(192,192,192,0.3)!important;
+}
