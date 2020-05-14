@@ -1,0 +1,36 @@
+---
+- 
+  type: Orden de servicio-status
+  name: Estado Orden de Servicio
+  name_plural: Estados de las Ordenes de Servicio
+  sort_mode: SortCol
+  masks: 13
+  notes: Estados de la Orden de Servicio
+  properties:
+    title: Propiedades del estado de la Orden de Servicio
+    instructions: Propiedades que pueden establecerse en un estado de la Orden de Servicio.
+    deletable: false
+    fields:
+      - 
+        type: state
+        name: state
+        label: Estado
+        required: true
+        sort: 1
+        edit_mask: 63
+        configuration:
+          prompt: Estado de una Orden de Servicio
+      - 
+        type: memo
+        name: description
+        label: Descripción
+        required: false
+        sort: 3
+        edit_mask: 15
+        configuration:
+          rows: 2
+          cols: 40
+          html: false
+          length: 100
+  configuration:
+    handler: OrdendeServicioStatusList

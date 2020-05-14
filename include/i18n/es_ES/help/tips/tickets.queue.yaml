@@ -1,0 +1,40 @@
+---
+search_field:
+  title: Campo de Búsqueda
+  content: ""
+advanced:
+  title: Opciones avanzadas
+  content: 'Estreche sus parámetros de búsqueda. Una vez que haya seleccionado sus criterios de búsqueda avanzada y ejecute la búsqueda, usted puede <span class="doc-desc-title"> exportar</span> los datos en la parte inferior de la página de Ordenes de Servicio.'
+open_tickets_table:
+  title: Tabla apertura de Ordenes de Servicio
+  content: Todos las Ordenes de Servicio están abiertos y requieren atención
+ticket:
+  title: Orden de Servicio
+  content: ""
+date:
+  title: Fecha
+  content: ""
+subject:
+  title: Asunto
+  content: ""
+from:
+  title: Desde
+  content: ""
+priority:
+  title: Prioridad
+  content: ""
+assigned_to:
+  title: Asignado a
+  content: ""
+export:
+  title: Exportar
+  content: Exportar los datos actualmente a la vista en un archivo CSV. Archivos CSV pueden abrirse con cualquier software de hoja de cálculo (por ejemplo, Microsoft Excel, páginas de Apple, OpenOffice, etc.).
+advanced_search_dialog:
+  title: Búsqueda avanzada
+  content: ""
+adv_keyword:
+  title: Búsqueda por palabra clave
+  content: 'Encontrar éxitos basados en los tema y contenido del  mensaje del hilo de la Orden de Servicio así como todo el contenido textual asociado con campos personalizados para los usuarios y las Orden de Servicio.'
+adv_date_range:
+  title: Búsqueda por rango de fechas
+  content: Definición aquí

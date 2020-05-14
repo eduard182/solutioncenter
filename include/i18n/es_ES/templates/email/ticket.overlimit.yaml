@@ -1,0 +1,4 @@
+---
+notes: Se envía a los usuarios cuando han excedido el límite máximo de apertura de Ordenes de Servicio. El límite es configurable desde el Panel de Administración, y es definido por el número de Orden de Servicio abiertos por una dirección de email en particular.
+subject: Se alcanzó el límite de Ordenes de Servicio
+body: '<h3><strong>Estimado %{ticket.name.first},</strong></h3> Ha alcanzado el número máximo de Ordenes de Servicio abiertos permitido. Para ser capaz de abrir otra Orden de Servicio , uno de tus Ordenes de Servicio pendientes debe estar cerrado. Para actualizar o agregar comentarios a una Orden de Servicio abierto simplemente <a href="%{url}/tickets.php?e=%{ticket.email}"> ingresa en nuestro servicio de asistencia</a>. <br><br>Gracias, <br/> sistema de Orden de Servicio de soporte'

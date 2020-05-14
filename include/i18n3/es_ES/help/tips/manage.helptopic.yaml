@@ -1,0 +1,66 @@
+---
+help_topic_information:
+  title: Información sobre Tema de Ayuda
+  content: '<span class="doc-desc-title"> temas de ayuda</span> Guía de información que recopila  los usuarios y cómo las ordenes de Servicio son enrutados o asignados.'
+topic:
+  title: Nombre del tema
+  content: Nombre único del tema de ayuda.
+status:
+  title: Estado
+  content: 'Si está deshabilitado, este <span class="doc-desc-title"> tema de ayuda</span> no estará disponible.'
+type:
+  title: Tipo
+  content: 'Si un <span class="doc-desc-title">Tema de Ayuda</span> es etiquetado como Privado, este solo estará disponible para elegir por los Agentes cuando habran una nueva Orden de Servicio desde el Panel del Personal.'
+parent_topic:
+  title: Tema principal
+  content: 'Seleccione el Tema Padre al cual este <span class="doc-desc-title">Tema de Ayuda</span> pertenecerá. El Tema Padre aparecerá primero en el listado y este <span class="doc-desc-title">Tema de Ayuda</span> será listado a continuación del padre.'
+custom_form:
+  title: Formulario personalizado
+  content: 'Formularios personalizados le ayudará a adquirir información más específica de los usuarios que son relevantes a este <span class="doc-desc-title"> tema de ayuda</span>.'
+  links:
+    - 
+      title: Administrar formularios personalizados
+      href: /scp/forms.php
+priority:
+  title: Prioridad
+  content: 'Seleccione la prioridad asignada a nuevas Ordenes de Servicio relacionadas con este <span class="doc-desc-title"> tema de ayuda</span>. <br><br>los filtros de Orden de Servicio puede anular la prioridad de la nueva Orden de Servicio.'
+department:
+  title: Departamento
+  content: Elija el Departamento al que se enrutarán nuevas Ordenes de Servicio en este tema de ayuda.
+  links:
+    - 
+      title: Administrar departamentos
+      href: /scp/departments.php
+sla_plan:
+  title: Plan de SLA
+  content: 'Elija SLA plan asociado con este <span class="doc-desc-title"> tema de ayuda</span>. <br><br>Esta selección anulará cualquier plan de SLA seleccionado del Departamento'
+  links:
+    - 
+      title: Gestionar planes de SLA
+      href: /scp/slas.php
+thank_you_page:
+  title: Página de agradecimiento
+  content: 'Elija la Página de Agradecimiento a la que el usuario es dirigido luego de abrir una Orden de Servicio perteneciente a este <span class="doc-desc-title">Tema de Ayuda</span>.'
+  links:
+    - 
+      title: Gestionar páginas de agradecimiento
+      href: /scp/pages.php
+auto_assign_to:
+  title: Asignar automáticamente nuevas Ordenes de Servicio
+  content: |2
+    Opcionalmente elija un Agente o Equipo para auto-asignar la apertura de nuevas ordenes de Servicio bajo este <span class="doc-desc-title">Tema de Ayuda</span>
+     <br><br> Los Filtros de Orden de Servicio pueden modificar esta asignación.
+  links:
+    - 
+      title: Gestión de personal y equipos
+      href: /scp/staff.php
+ticket_auto_response:
+  title: Auto-Respuesta a la orden de Servicio
+  content: 'Si está habilitado, esta opción deshabilitará la auto-respuesta a las nuevas Ordenes de Servicio que pertenezcan a este <span class="doc-desc-title">Tema de Ayuda</span>. <br><br> Esto modifica la opción de autorespuesta para el <span class="doc-desc-title">Departamento</span> así como la opción global <span class="doc-desc-title">Opciones de Autorespuesta</span>.'
+  links:
+    - 
+      title: Configuración de autoresponder
+      href: /scp/settings.php?t=autoresp
+custom_numbers:
+  title: Números de Ordenes de Servicio personalizados
+  content: 'Seleccione "Personalizar" para reemplazar el formato de numeración de una Orden de Servicio por defecto del sistema para las ordenes de Servicio creados en este tema de ayuda. Ver los mensajes de ayuda en la página de Configuración / Ordenes de Servicio para más detalles sobre los ajustes.'
