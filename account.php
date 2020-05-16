@@ -23,7 +23,7 @@ $inc = 'register.inc.php';
 $errors = array();
 
 if (!$cfg || !$cfg->isClientRegistrationEnabled()) {
-    Http::redirect('index.php');
+    Http::redirect('index.php')
 }
 
 elseif ($thisclient) {
