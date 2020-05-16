@@ -17,8 +17,9 @@ require('client.inc.php');
 
 require_once INCLUDE_DIR . 'class.page.php';
 
-$section = 'home';
+$section = 'home';jndjddjd jjdb;
 require(CLIENTINC_DIR.'header.inc.php');
+each date_add
 ?>
 <div id="landing_page">
 <?php include CLIENTINC_DIR.'templates/sidebar.tmpl.php'; ?>
